@@ -91,7 +91,7 @@ public class CybersourceAPI {
          req.setHeader('Digest', generateDigest());
          req.setBody(this.body);
         }
-        req.setHeader('v-c-merchant-id', 'advocare');
+        req.setHeader('v-c-merchant-id', 'merchantName');
         req.setHeader('v-c-date', dateGMT);
         req.setHeader('Content-Type', 'application/json');
 		HttpResponse res = h.send(req);
